@@ -1,0 +1,17 @@
+# Virtual environment
+ve_housing/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Data files (keep raw data out of Git)
+data/
+outputs/
+
+# Model artifacts
+models/
+*.pkl
