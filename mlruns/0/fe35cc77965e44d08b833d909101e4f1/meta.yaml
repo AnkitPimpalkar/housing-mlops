@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/HP/ML Housing pro/mlruns/0/fe35cc77965e44d08b833d909101e4f1/artifacts
+end_time: 1746689699986
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fe35cc77965e44d08b833d909101e4f1
+run_name: RandomForest_run_20250508_130423
+run_uuid: fe35cc77965e44d08b833d909101e4f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746689664930
+status: 3
+tags: []
+user_id: HP

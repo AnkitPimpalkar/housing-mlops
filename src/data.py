@@ -1,6 +1,8 @@
 import pandas as pd
+
 def load_data(url):
-    data = pd.read_csv(url)
+    Raw_data=pd.read_csv(url)
+    data=Raw_data.copy()
     return data
 
 def clean_data(data):
