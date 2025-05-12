@@ -15,6 +15,10 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read # Required for checkout
+      packages: write # Required to push Docker images to GHCR
+
     steps:
     # Step 1: Checkout the code
     - name: Checkout code
