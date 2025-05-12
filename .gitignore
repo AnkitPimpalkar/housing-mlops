@@ -4,6 +4,7 @@ ve_housing/
 # Python cache
 __pycache__/
 *.py[cod]
+*.pyc
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
@@ -11,7 +12,12 @@ __pycache__/
 # Data files (keep raw data out of Git)
 data/
 outputs/
+mlruns/
+*.egg-info/
 
 # Model artifacts
 models/
 *.pkl
+
+#Logged requirements 
+requirements_logged.txt
