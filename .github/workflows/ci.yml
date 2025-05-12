@@ -24,8 +24,12 @@ jobs:
     - name: Set up Docker variables
       id: vars
       run: |
-        # IMAGE_NAME: GHCR path (ghcr.io/YOUR_GITHUB_USERNAME/your-repo-name)
-        IMAGE_NAME="ghcr.io/${{ github.repository }}" # <-- Yeh line use karo
+        # Get repository name in lowercase
+        # | tr '[:upper:]' '[:lower:]' converts it to 'ankitpimpalkar/housing-mlops'
+        LOWER_REPO_NAME=$(echo ${{ github.repository }} | tr '[:upper:]' '[:lower:]')
+
+        # IMAGE_NAME: GHCR path using lowercase repo name
+        IMAGE_NAME="ghcr.io/${LOWER_REPO_NAME}"
         # IMAGE_TAG: Commit SHA ka pehla 7 chars as tag
         IMAGE_TAG=$(echo ${{ github.sha }} | cut -c 1-7)
         # Full Image Name:Tag combination
